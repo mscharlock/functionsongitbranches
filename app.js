@@ -16,7 +16,7 @@ function sum(a,b){
 
 
 // Here is the test for sum(); uncomment it to run it
-sum(4, 7);
+testSum(4, 7);
 
 /////////////////////////////////////
 /* Problem 2
@@ -34,7 +34,7 @@ function multiply(a,b){ //eslint-disable-line
 }
 
 // Here is the test for multiply(); uncomment it to run it
-multiply(5,9);
+testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
