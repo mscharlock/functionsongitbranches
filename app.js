@@ -55,7 +55,7 @@ function sumAndMultiply(a,b,c){
   var firstElement = sum(a,b,c);
   var secondElement = multiply(a,b,c);
   var thirdElement = a + ' and ' + b + ' and ' + c + ' sum to ' + sum(); 
-  var fourthElement = 'The product of ' + a + ' and ' + 
+  var fourthElement = 'The product of ' + a + ' and ' + c + ' is ' +multiply();
   return [firstElement, secondElement, thirdElement, fourthElement];
 }
 
