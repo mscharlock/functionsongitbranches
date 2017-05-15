@@ -14,7 +14,7 @@ function sum(a,b){
   return [mySum, myMsg];
 }
 
-
+sum();
 // Here is the test for sum(); uncomment it to run it
 testSum(4, 7);
 
@@ -27,18 +27,18 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-function multiply(a,b){ 
+function multiply(a,b){
   var myProduct = (a * b);
   var string = 'The product of ' + a + ' and ' + b + ' is ' + myProduct +'.';
   return [myProduct, string];
 }
 
 // Here is the test for multiply(); uncomment it to run it
-testMultiply(5,9); 
+testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
-//Note!! I somehow ended up trying to merge in the command line, which has given me this branch of master|MERGING for the last 10 or so minutes so I'm just editing in the text on the web. 
+//Note!! I somehow ended up trying to merge in the command line, which has given me this branch of master|MERGING for the last 10 or so minutes so I'm just editing in the text on the web.
 
 /* Problem 3
 Write a function called sumAndMultiply() that takes in three numbers as separate arguments and returns an array where the first element is the sum of those three numbers, the second element is the product of those three numbers,  and the third and fourth elements are strings that EXACTLY follow this example and use the values that were input into the function:
@@ -50,14 +50,21 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
-// Write your code here
-function sumAndMultiply(a,b,c){ 
-  var firstElement = sum(a,b,c);
-  var secondElement = multiply(a,b,c);
-  var thirdElement = a + ' and ' + b + ' and ' + c + ' sum to ' + sum(); 
+// Write your code here 475
+function sumAndMultiply(a,b,c) {
+  var firstElement = function sum(a,fn) {
+     var fn = mySum(b,c);
+      return fn;
+    }
+  //multiply (4*5)*7
+  var secondElement = function multiply(fn, b) {
+    var fn = myMultiply(a, c);
+    return myMultiply;
+  }
+  var thirdElement = a + ' and ' + b + ' and ' + c + ' sum to ' + sum();
   var fourthElement = 'The product of ' + a + ' and ' + c + ' is ' +multiply();
   return [firstElement, secondElement, thirdElement, fourthElement];
-}
+  }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4,7,5);
