@@ -87,18 +87,16 @@ testSumAndMultiply(4,7,5);
 var testArray = [2,3,4]; //eslint-disable-line
 
 function sumArray(testArray){ //eslint-disable-line
-  var data = [];
-  for(var i = 0; i <= testArray.length; i++) {
-    var firstElement = sum(testArray[0],testArray[1]);
-    data.push();
-    console.log(firstElement);
-  }
-  // var secondElement = "2,3,4 was passed in as an array of numbers, and 9 is their sum."
+  var firstSum = sum(testArray[0],testArray[1]);
+  var firstElement = (firstSum, testArray[2]);
+  console.log(firstElement);
+  var secondElement = '2,3,4 was passed in as an array of numbers, and 9 is their sum.';
+  return [firstElement, secondElement];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
 
-testSumArray(testArray);
+testSumArray();
 //
 // // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 //
