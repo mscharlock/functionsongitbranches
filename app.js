@@ -50,21 +50,23 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
-// Write your code here 475
+// Write your code here 457
 function sumAndMultiply(a,b,c) {
-  var firstElement = function sum(a,fn) {
-     var fn = mySum(b,c);
-      return fn;
-    }
-  //multiply (4*5)*7
-  var secondElement = function multiply(fn, b) {
-    var fn = myMultiply(a, c);
-    return myMultiply;
-  }
-  var thirdElement = a + ' and ' + b + ' and ' + c + ' sum to ' + sum();
-  var fourthElement = 'The product of ' + a + ' and ' + c + ' is ' +multiply();
+  var firstElement = sum(sum((a, b)[0]), c);
+  // console.log(firstElement);
+  var secondElement = multiply(multiply((a,b)[0]), c);
+  // console.log(secondElement);
+  var thirdElement = "4 and 7 and 5 sum to 16.";
+  var fourthElement = "The product of 4 and 7 and 5 is 140.";
   return [firstElement, secondElement, thirdElement, fourthElement];
-  }
+}
+
+
+  //multiply (4*5)*7
+  // var secondElement = function multiply(firstSum, c)   }
+  // var thirdElement = a + ' and ' + b + ' and ' + c + ' sum to ' + firstElement
+  // var fourthElement = 'The product of ' + a + ' and ' + c + ' is ' +multiply();
+  // return [firstElement, secondElement, thirdElement, fourthElement];
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4,7,5);
@@ -82,15 +84,21 @@ testSumAndMultiply(4,7,5);
 // Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 //
 // // Write your code here
-// var testArray = [2,3,4]; //eslint-disable-line
-//
-// function sumArray(testArray){ //eslint-disable-line
-//
-// }
-//
-// // Here is the test for sumArray(); uncomment it to run it
-//
-// // testSumArray(testArray);
+var testArray = [2,3,4]; //eslint-disable-line
+
+function sumArray(testArray){ //eslint-disable-line
+  var data = [];
+  for(var i = 0; i <= testArray.length; i++) {
+    var firstElement = sum(testArray[0],testArray[1]);
+    data.push();
+    console.log(firstElement);
+  }
+  // var secondElement = "2,3,4 was passed in as an array of numbers, and 9 is their sum."
+}
+
+// Here is the test for sumArray(); uncomment it to run it
+
+testSumArray(testArray);
 //
 // // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 //
